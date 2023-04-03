@@ -28,7 +28,7 @@ class Time:
         # self.cells = [[self.Cell() for _ in range(self.cols)] for _ in range(self.rows)]
         self.grid = Grid(self.init_dict)
         self.grid.spawn_canteen(init_dict["num_canteens"])
-        self.fight = True
+        self.fight = False
 
         self.u = int(u_percent * num_pacmen)
         self.g = int(g_percent * num_pacmen)
